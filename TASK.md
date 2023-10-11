@@ -11,8 +11,14 @@
   - https://console.cloud.google.com/apis/dashboard?pli=1
 
 3. Setup  GET /connect/email?email=[EMAIL] endpoint
-
+  - create interface for different email providers
+  - implement google email provider
   - redirect/return Google Auth URL
 
 
 
+
+
+Future:
+
+Docker/Containerization
