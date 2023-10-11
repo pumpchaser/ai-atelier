@@ -12,7 +12,11 @@
 
 3. Install Flask (TODO: move into script)
 
-`pip install flask oauthlib requests`
+`pip install flask oauthlib requests python-dotenv`
+
+4. Create a .env file and fill it out
+
+`cp .env.example .env`
 
 ## Local Server
 

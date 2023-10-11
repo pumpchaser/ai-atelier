@@ -22,3 +22,4 @@
 Future:
 
 Docker/Containerization
+Alembic - database migrations + database for storing access token securely
