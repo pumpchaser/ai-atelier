@@ -41,6 +41,8 @@
 
         `global_data = {} `
 
+5. Deploy
+
 
 Future:
 
