@@ -10,9 +10,9 @@
 
 `$ . .venv/bin/activate`
 
-3. Install Flask (TODO: move into script)
+3. Install Flask and requirements
 
-`pip install flask oauthlib requests python-dotenv requests_oauthlib pytest`
+`pip install -r requirements.txt`
 
 4. Create a .env file and fill it out with your Google API cred
 

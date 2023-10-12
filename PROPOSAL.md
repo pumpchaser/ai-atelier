@@ -19,10 +19,9 @@
     - interface should expose function to:
       1. given timestamp (int), return boolean whether user received email since (after) timestamp
   - implement google oauth provider
-  - redirect/return Google Auth URL
-    - just return for now, we can redirect if needed after talking to frontend devs
+  - redirect URL
 
-4. Setup POST(?) /callback endpoint
+4. Setup GET /callback endpoint
   - call google to exchange auth code for access token
   - store access token
     - should be stored properly in a database

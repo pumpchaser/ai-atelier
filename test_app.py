@@ -1,6 +1,9 @@
-import pytest
-from app import app
 from unittest.mock import patch
+
+import pytest
+
+from app import app
+
 
 @pytest.fixture
 def client():
