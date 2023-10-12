@@ -2,10 +2,10 @@ import os
 
 from dotenv import load_dotenv
 from flask import Flask, redirect, request, session
-from google.oauth2.credentials import Credentials
-from requests_oauthlib import OAuth2Session
-from googleapiclient.discovery import build
 from flask_caching import Cache
+from google.oauth2.credentials import Credentials
+from googleapiclient.discovery import build
+from requests_oauthlib import OAuth2Session
 
 load_dotenv()  # Load environment variables from .env file
 app = Flask(__name__)

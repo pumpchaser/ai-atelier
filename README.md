@@ -20,7 +20,7 @@
 
 ## Local Server
 
-`flask --app app run`
+`flask --app ai_atelier/app/server run`
 
 
 ## Tests

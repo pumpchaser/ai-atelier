@@ -2,7 +2,7 @@ from unittest.mock import patch
 
 import pytest
 
-from app import app
+from ai_atelier.app.server import app
 
 
 @pytest.fixture
@@ -13,7 +13,7 @@ def client():
 
 
 # TODO: Move tests to test directory
-@patch('app.OAuth2Session.authorization_url')
+@patch('ai_atelier.app.server.OAuth2Session.authorization_url')
 def test_index_route(mock_oauth2_session, client):
     mock_oauth2_session.return_value = ('http://example.com/auth', 'state')
     response = client.get('/')
