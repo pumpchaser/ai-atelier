@@ -40,10 +40,22 @@
 
         `global_data = {} `
 
-5. Deploy
+5. Setup GET /emails/search
+  - accepts access token and timestamp (int)
+  - use access token to parse emails and get internal date
+  - return true if any email were received after timestamp
 
 
-Future:
+5. Deploy on Heroku
+
+
+
+Forward Thinking/Additional Features:
 
 Docker/Containerization - solves the "works on my env" problem, useful for cicd
-Alembic - database migrations + database for storing access token securely
+
+Database (Alembic/Postgres) - potentially start parsing user email and storing it in a DB to avoid a network call on every GET /emails/search
+
+Celery - queue background tasks to fetch user emails' internal date nightly and store in database
+
+Deploy on AWS - more granular control and cheaper than heroku which is fine for free tier demo
