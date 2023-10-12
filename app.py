@@ -26,8 +26,11 @@ def index():
     google = OAuth2Session(CLIENT_ID, redirect_uri=REDIRECT_URI, scope=SCOPE)
     authorization_url, state = google.authorization_url(AUTH_BASE_URL, access_type='offline')
     print(authorization_url)
+
+    # Hack for now to make sure oauth_state is available for callback
     session['oauth_state'] = state
     cache.set('oauth_state', state)
+
     return redirect(authorization_url)
 
 
