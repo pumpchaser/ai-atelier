@@ -7,7 +7,7 @@
     - dotenv - store google api keys
     - oauthlib
     - requests
-    - openapi/connexion (nice to have) - good for defining/validating api request/response
+
 
 2. Signup for Google Gmail API
   - https://developers.google.com/gmail/api/guides
@@ -52,10 +52,14 @@
 
 Forward Thinking/Additional Features:
 
-Docker/Containerization - solves the "works on my env" problem, useful for cicd
+Docker/Containerization - solves the "works on my env" problem, also sets us up for CICD
 
 Database (Alembic/Postgres) - potentially start parsing user email and storing it in a DB to avoid a network call on every GET /emails/search
 
 Celery - queue background tasks to fetch user emails' internal date nightly and store in database
 
 Deploy on AWS - more granular control and cheaper than heroku which is fine for free tier demo
+
+OpenAPI/Swagger + connexion - good for defining/validating api request/response
+
+Clean up requirements.txt - I probably have a few unneeded deps that I installed during setup
